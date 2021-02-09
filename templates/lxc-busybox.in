@@ -271,7 +271,7 @@ EOF
   return 0
 }
 
-if ! options=$(getopt -o hp:n: -l help,rootfs:,path:,name:,mapped-uid:,mapped-gid: -- "$@"); then
+if ! options=$(busybox getopt -o hp:n: -l help,rootfs:,path:,name:,mapped-uid:,mapped-gid: -- "$@"); then
   usage
   exit 1
 fi
