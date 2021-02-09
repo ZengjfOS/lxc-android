@@ -4,7 +4,7 @@
 : ${CONFIG:=/proc/config.gz}
 : ${MODNAME:=configs}
 
-CAT="cat"
+CAT="zcat"
 
 if [ -t 1 ]; then
     SETCOLOR_SUCCESS="printf \\033[1;32m"
