@@ -99,7 +99,7 @@ ${rootfs}/usr/lib64"
 
   # root user defined
   cat <<EOF >> "${rootfs}/etc/passwd"
-root:x:0:0:root:/root:/bin/sh
+root::0:0:root:/root:/bin/sh
 EOF
 
   cat <<EOF >> "${rootfs}/etc/group"
